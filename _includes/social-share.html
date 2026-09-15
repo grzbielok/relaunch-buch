@@ -1,7 +1,30 @@
 <div class="social-share">
-  <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Bei Facebook posten"><span class="count"><i class="fa fa-facebook-square"></i> Teilen</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" title="Bei Twitter teilen"><span class="count"><i class="fa fa-twitter-square"></i> Twittern</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Bei Google Plus teilen"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
-  </ul>
+  <button type="button" class="btn share-btn" data-share-url="{{ site.url }}{{ page.url }}" data-share-title="{{ page.title | strip_html | escape }}">
+    <i class="fa fa-share-alt"></i> <span class="share-btn-label">Teilen</span>
+  </button>
 </div><!-- /.social-share -->
+<script>
+(function () {
+  document.querySelectorAll(".share-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var url = btn.getAttribute("data-share-url");
+      var title = btn.getAttribute("data-share-title");
+      var label = btn.querySelector(".share-btn-label");
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).catch(function () {});
+        return;
+      }
+      if (navigator.clipboard && label) {
+        var original = label.textContent;
+        navigator.clipboard.writeText(url).then(function () {
+          label.textContent = "Link kopiert!";
+        }).catch(function () {
+          label.textContent = "Kopieren fehlgeschlagen";
+        }).then(function () {
+          setTimeout(function () { label.textContent = original; }, 2000);
+        });
+      }
+    });
+  });
+})();
+</script>

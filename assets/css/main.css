@@ -5,3 +5,7 @@ body{margin-top:26px;font-size:16px}.hidden{display:none;visibility:hidden}.visu
 /* Custom: Twitter/X social link deliberately removed, marked with a red scribble */
 .social-link-removed .crossed-out{display:inline-block;position:relative;color:rgba(255,255,255,.45);pointer-events:none;-webkit-user-select:none;user-select:none}
 .social-link-removed .scribble-x{position:absolute;left:50%;top:50%;transform:translate(-50%,-55%) rotate(-8deg) scaleX(2.3);font-family:"Permanent Marker",cursive;color:#e0201e;font-size:30px;line-height:1;pointer-events:none;text-shadow:0 1px 0 rgba(0,0,0,.25)}
+/* Custom: generic share button (replaces old Twitter/Google+ share icons) */
+.social-share{text-align:center}
+.social-share .share-btn{cursor:pointer;border:none;font-family:inherit;-webkit-appearance:none}
+.social-share .share-btn i{margin-right:4px}
