@@ -33,7 +33,7 @@ background:
 # Google shut down in 2023 -- replaced with GoatCounter below)
 # GoatCounter site code -- e.g. "relaunchbuch" for relaunchbuch.goatcounter.com
 # Sign up free at https://www.goatcounter.com/signup, then fill in here.
-goatcounter:
+goatcounter: relaunchbuch
 google_verify:       4f_uY8xy7fKXt2k-6P45vvzi96jpXx7lAY83Jfw0yTQ
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         1541E820358DE1A9ADD823DA9E5BB348
