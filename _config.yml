@@ -90,3 +90,5 @@ exclude:
   - tmp
   - theme-reference
   - jekyll.thor
+  - vendor
+  - Gemfile.lock
