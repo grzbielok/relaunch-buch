@@ -1,32 +1,25 @@
 ---
 layout: page
-title: About the Jekyll Theme
-image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+title: "Über"
 comments: false
-modified: 2016-02-01
+image:
+  feature: manuskript-40000.jpg
+  credit: "Screenshot aus Scrivener für Mac"
 ---
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
+<!--
+  Entwurf, zusammengestellt aus den vorhandenen Blogposts (siehe _posts/) --
+  der Original-"Über"-Text von relaunch-buch.de ist nicht erhalten (der
+  Live-Snapshot von 2018 hatte hier irrtümlich den Impressum-Text stehen).
+  Bitte gegenlesen und in der Ich-Perspektive nach Bedarf anpassen.
+-->
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+Ich bin Dominic Grzbielok: Vater, Ehemann, Produktmacher. Und, was diese Seite hier begründet, sehr, sehr erfahren, was Relaunches angeht.
 
-## HPSTR Features:
+Gerade schreibe ich ein Sachbuch darüber – für Marketing-Entscheider in kleinen und mittleren Unternehmen, die vor einem Relaunch stehen: der Webseite, der Marke, manchmal beidem gleichzeitig. Diese Seite ist die Begleit-Site zum Buch. Zielumfang sind rund 75.000 Worte, in etwa so viel wie meine Diplomarbeit (die ich gemeinsam mit Christoph Elles geschrieben habe) oder ein gutes Sachbuch, das ich selbst gerne lese.
 
-* Compatible with Jekyll 3 and GitHub Pages.
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Sweet animated menu.
-* Background image support.
-* Support for large images to call out your favorite posts.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Syntax highlighting]({{ site.url }}/code-highlighting-post/) stylesheets to make your code examples look snazzy.
+Schreiben war lange Zeit mein Beruf – verlässlich vier, fünf Artikel am Tag, macht ungefähr 1.000 Worte. An dieses Tempo halte ich mich auch beim Relaunch-Buch, meistens ohne großen Stress. Geschrieben wird in Scrivener, am liebsten im Zug, denn mein Leben auf dem Land will ich fürs Buch nicht aufgeben.
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
+Nebenbei dokumentiere ich hier auch die Werkzeuge und Umwege, die zu dem Buch dazugehören: warum diese Seite in Jekyll gebaut ist, was ein SEO-Crawler wie Screaming Frog taugt, wie man mit Social Media und Personalisierung im Marketing umgeht – und ab und zu auch, worüber man im Marketing einfach nur schmunzeln kann.
 
-[^1]: Example: *domain.com/category-name/post-title*
+Wer auf dem Laufenden bleiben will: [@RelaunchBuch auf Twitter](https://twitter.com/RelaunchBuch) oder per [E-Mail](mailto:{{ site.owner.email }}).

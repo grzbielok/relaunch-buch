@@ -1,58 +1,59 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: 
+title:            Relaunch-Buch
+description:      "Relaunch-Buch: Ein Buch für Marketing-Entscheider in KMUs"
+disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url:              https://www.relaunch-buch.de
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  name:           Dominic Grzbielok
+  avatar:         dominicgrzbielok.jpg
+  bio:            "Vater, Ehemann, Produktmacher. Und sehr, sehr erfahren, was Relaunches angeht."
+  email:          dominic@grzbielok.de
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
+  twitter:        RelaunchBuch
+  facebook:       grzbielok
+  github:
+  stackexchange:
+  linkedin:
+  instagram:      krautsource
+  flickr:
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:   UA-82830433-1
+google_verify:       4f_uY8xy7fKXt2k-6P45vvzi96jpXx7lAY83Jfw0yTQ
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:         1541E820358DE1A9ADD823DA9E5BB348
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      false  # publish future dated posts --  true, false (default) 
+timezone:    Europe/Berlin
+future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-gist
   - jekyll-feed
+  # jekyll-gist removed: pulls in net-http >= 0.7 which needs Ruby >= 2.7
+  # (this machine's system Ruby is 2.6). Re-add if a post ever embeds a Gist.
 sass:
   sass_dir: _sass
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   /:title/
 
 # Amount of post to show on home page
-paginate: 5
+paginate: 3
 
 kramdown:
   input: GFM
@@ -87,3 +88,5 @@ exclude:
   - package.json
   - spec
   - tmp
+  - theme-reference
+  - jekyll.thor
